@@ -1,0 +1,19 @@
+{
+    "preguntas": [
+        {
+            "pregunta": "¿Cuál es el primer libro de la Biblia?",
+            "respuesta": "Génesis",
+            "opciones": ["Génesis", "Éxodo", "Levítico", "Números"],
+            "comentario": "¡Correcto! El primer libro de la Biblia es Génesis."
+        },
+        {
+            "pregunta": "¿Cuántos libros hay en el Antiguo Testamento?",
+            "respuesta": "39",
+            "opciones": ["39", "27", "66", "12"],
+            "comentario": "¡Correcto! Hay 39 libros en el Antiguo Testamento."
+        }
+        
+    ]
+
+}
+

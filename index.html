@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabiduría Eterna</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="inicio">
+        <h1>¡Bienvenido!</h1>
+        <!--aqui va el parrafo en la pagina de bienvenida-->
+        <a href="#" id="mostrarRegistro">registrarse</a>
+        <a href="#" id="mostrarInicioSesion">iniciar sesión</a>
+    </div>
+
+    <div id="registroForm" class="formulario hidden">
+        <h2>Registrarse</h2>
+        <form id="formularioRegistro" onsubmit="registrarUsuario(event)">
+            <input type="text" id="nombreUsuario" placeholder="Nombre de usuario" required>
+            <input type="password" id="contraseña" placeholder="Contraseña" required>
+            <input type="password" id="confirmarContraseña" placeholder="Confirmar contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+
+    <div id="inicioSesionForm" class="formulario hidden">
+        <h2>Iniciar Sesión</h2>
+        <form id="formularioInicioSesion" onsubmit="iniciarSesion(event)">
+            <input type="text" id="nombreUsuarioInicio" placeholder="Nombre de usuario" required>
+            <input type="password" id="contraseñaInicio" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <div id="juego" class="hidden">
+        <div id="pregunta"></div>
+        <div id="opciones"></div>
+        <div id="progreso"><span id="progresoActual"></span>
+        <span id="totalPreguntas"></span></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

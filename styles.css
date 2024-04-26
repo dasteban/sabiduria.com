@@ -1,0 +1,129 @@
+body {
+    font-family: lato, sans-serif;
+    background-color: rgb(22, 38, 38);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para la página de bienvenida */
+#inicio {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#inicio h1 {
+    color: rgb(36, 162, 162);
+    font-size: 56px;
+    margin-bottom: 30px;
+}
+
+#inicio a {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    color: orangered;
+    margin-bottom: 10px;
+    transition: font-size 1.3s, color 1.3s, transform 0.3s; /* Agregamos transición para el efecto */
+}
+
+#inicio a:hover {
+    text-decoration: underline;
+    font-size: 18px;
+    color: beige;
+    transform: translateY(-5px);
+}
+
+/* Estilos para los formularios */
+.formulario {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    color: rgb(242, 86, 29);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"] {
+    top: 0;
+    height: 100%;
+    background-color: rgb(22, 38, 38);
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(22, 38, 38);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.formulario button[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background-color:rgb(36, 162, 162) ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 1.3s;
+}
+
+.formulario button[type="submit"]:hover {
+    background-color: rgb(22, 38, 38);
+}
+
+/* Estilos para los campos de formulario enfocados */
+.formulario input[type="text"]:focus,
+.formulario input[type="password"]:focus {
+    transform: translateY(-5px); /* Movemos el campo hacia arriba al enfocarlo */
+}
+
+
+
+/* Estilos para el contenedor del formulario */
+.formulario {
+    position: relative;
+    }
+    
+  /* Estilos para la etiqueta de la contraseña */
+    .formulario label {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical de la etiqueta */
+    left: 10px; /* Ajusta la posición horizontal de la etiqueta */
+    transition: all 0.3s; /* Agrega una transición suave */
+    pointer-events: none; /* Evita que la etiqueta sea clickeable */
+    color: #777; /* Color del texto */
+    }
+    .formulario input[type="password"] {
+  /* Estilos para el campo de contraseña */
+    padding: 20px 10px 10px; /* Ajusta el relleno del campo */
+    border: 1px solid #ccc; /* Agrega un borde alrededor del campo */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    }
+    
+  /* Estilos para el campo de contraseña cuando está enfocado o tiene contenido */
+    .formulario input:focus + label,
+    .formulario input:not(:placeholder-shown) + label {
+    top: 0; /* Mueve la etiqueta hacia arriba */
+    font-size: 0.8em; /* Reduce el tamaño de la etiqueta */
+    }
+
+
+    #registroForm,
+    #inicioSesionForm {
+        display: none;
+    }
+    
+
+
+/* Estilos adicionales según sea necesario */
